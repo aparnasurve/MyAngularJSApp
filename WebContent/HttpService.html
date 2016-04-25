@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<table>
+<tr>
+<th>&nbsp;&nbsp;&nbsp;NAME</th>
+<th>&nbsp;&nbsp;&nbsp;DISTANCE</th>
+<th>&nbsp;&nbsp;&nbsp;LIGHT</th>
+</tr>
+</tr>
+	<tr ng-repeat="people in peoples">
+	<td>{{people.name}}</td>
+	<td>{{people.distance}}</td>
+	<td>{{people.light}}</td>
+	</tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+	$scope.people = [];
+  $http.get("file1.json").success(function (response) {
+      $scope.peoples = response.data;
+  });
+});
+</script>
+
+</body>
+</html>

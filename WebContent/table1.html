@@ -1,0 +1,40 @@
+<select ng-options="obj.val as obj.txt for obj in slctOptions"
+        ng-change="update()"
+        ng-model="slctItem">
+
+</select>
+<table>
+  <tr ng-repeat="result in results">
+     <td>{{result.value1}}</td>
+     <td>{{result.value2}}</td>
+     <td>{{result.value3}}</td>
+  </tr>
+</table>
+<script>
+function MyCtrl($scope, $http) {
+    $scope.slctOptions = [
+        {
+          val: 'a',
+          txt: "option1"
+        },
+        {
+          val: 'b',
+          txt: "option2"
+        },
+        {
+          val: 'c',
+          txt: "option3"
+        },
+        {
+          val: 'n',
+          txt: "optionn"
+        },
+    ];
+    $scope.update = function () {
+      $http.get('http://host:8000/getjsondata.jsp?var=' + $scope.slctItem).success(function (data) {
+        $scope.results = data;
+      });
+    };
+}
+</script>
+</html>

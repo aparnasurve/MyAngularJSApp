@@ -1,0 +1,38 @@
+[
+    {
+        "checkbox1": {
+            "fieldName": "checkbox1",
+            "fieldValue": "Y"
+        },
+        "checkbox2": {
+            "fieldName": "checkbox3",
+            "fieldValue": "Y"
+        },
+        "checkbox3": {
+            "fieldName": "checkbox3",
+            "fieldValue": "N"
+        }
+    }
+]
+
+
+[
+    {
+        "name": "checkbox1",
+        "field": "checkbox1.fieldValue",
+        "displayName": "checkbox1",
+        "cellTemplate": '<input type=\"checkbox\" ng-model=\"{{COL_FIELD}}\" ng-true-value=\'Y\' ng-false-value=\'N\' />'
+        },
+        {
+            "name": "checkbox2",
+            "field": "checkbox2.fieldValue",
+            "displayName": "checkbox2",
+            "cellTemplate": '<input type=\"checkbox\" ng-model=\"{{COL_FIELD}}\" ng-true-value=\'Y\' ng-false-value=\'N\' />'
+        },
+        {
+            "name": "checkbox3",
+            "field": "checkbox3.fieldValue",
+            "displayName": "checkbox3",
+            "cellTemplate": '<input type=\"checkbox\" ng-model=\"{{COL_FIELD}}\" ng-true-value=\'Y\' ng-false-value=\'N\' />'
+        }
+    ];

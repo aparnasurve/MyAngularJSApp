@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="Controller.js"></script>
+<body>
+<div ng-app="myApp" ng-controller='myCtrl' >
+<input type="button" ng-click="display1()" value="FIRST" />
+<input type="button" ng-click="display2()" value="LAST" />
+<p> {{display}} </p>
+<p> My name is {{first}}  {{last}} </p>
+</div>
+</body>
+</html>

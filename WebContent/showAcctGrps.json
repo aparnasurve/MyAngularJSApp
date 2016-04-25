@@ -1,0 +1,87 @@
+[  
+   {  
+      "group":{  
+         "id":1,
+         "name":"6 Digit"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"11",
+      "Owner":"Kalyani Desai",
+      "CreatedEST":"11/20/2013 2:48:45 AM",
+      "LastUpdatedEST":"Kalyani Desai 11/20/2013 2:48:45 AM"
+   },
+   {  
+      "group":{  
+         "id":1,
+         "Name":"6 Digit"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"11",
+      "Owner":"Siddhartha Rao",
+      "CreatedEST":"11/20/2013 2:48:45 AM",
+      "LastUpdatedEST":"Kalyani Desai 11/20/2013 2:48:45 AM"
+   },
+   {  
+      "group":{  
+         "id":2,
+         "Name":"Arun Group"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"4",
+      "Owner":"Kalyani Puranik",
+      "CreatedEST":"12/3/2013 5:32:32AM",
+      "LastUpdatedEST":"Kalyani Desai"
+   },
+   {  
+      "group":{  
+         "id":3,
+         "Name":"Cash 123"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"4",
+      "Owner":"Kalpesh Nagmoti",
+      "CreatedEST":"11/20/2013 2:50:30AM",
+      "LastUpdatedEST":"Kalyani Desai 11/20/2013 2:50:30AM"
+   },
+   {  
+      "group":{  
+         "id":4,
+         "Name":"Cash 345"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"2",
+      "Owner":"Gaurav Karande",
+      "CreatedEST":"11/20/2013 6:51:15 AM",
+      "LastUpdatedEST":"Kalyani Desai 11/20/2013 6:51:15 AM"
+   },
+   {  
+      "group":{  
+         "id":4,
+         "Name":"Cash 345"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"10",
+      "Owner":"Aparna Surve",
+      "CreatedEST":"11/20/2013 3:45:20 AM",
+      "LastUpdatedEST":"Kalyani Desai 11/20/2013 3:45:20 AM"
+   },
+   {  
+      "group":{  
+         "id":4,
+         "Name":"Cash 345"
+      },
+      "Type":"Portfolio",
+      "Action":true,
+      "Accounts":"45",
+      "Owner":"Gauri Somavanshi",
+      "CreatedEST":"11/20/2013 2:53:58AM",
+      "LastUpdatedEST":"Kalyani Desai 11/20/2013 2:53:58AM",
+      "ReadOnly":true
+   }
+]

@@ -1,0 +1,34 @@
+<html>
+<body>
+
+
+<div ng-controller="ngGridCtrl2">
+   <div ng-grid="gridOptions" class="gridStyle"></div>
+</div>
+
+</body>
+
+<script>
+
+
+function ngGridCtrl($scope, $http) {
+    $http.get('C:/Users/xbbl1qn/Desktop/JSONFILE.json').success(function (data) {
+        $scope.myData = data;
+    });
+    $scope.gridOptions = {
+        data: 'myData',
+        showGroupPanel: true,
+        enableCellSelection: true,
+        canSelectRows: false,
+        disableTextSelection: true,
+        enablePaging: true,
+        columnDefs: [
+            {field: 'siteCode', displayName: 'Site Code', enableFocusedCellEdit: true},
+            {field: 'data[$index].locationCode', displayName: 'Location', enableFocusedCellEdit: true},
+            {field: 'data[$index].misc[$index].name', displayName: 'Name', enableFocusedCellEdit: true}
+        ]
+    };
+}
+
+</script>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div ng-app="" ng-init="quantity=0;price=0">
+Quantity :<input type="number" ng-model="quantity" /><br/><br/>
+Price : <input type="number" ng-model="price" /><br/><br/>
+<p> Total Amount = {{quantity * price}} </p>
+</div>
+</body>
+</html>

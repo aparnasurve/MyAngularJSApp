@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search String using AngularJS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script type="text/javascript" src="SesrchWord.js"></script>
+    </head>
+    <body ng-app="instantsearch">
+        <div ng-controller="instantSearchCtrl">
+      
+            <div class="bar">
+                <input type="text" class="search" ng-model="searchString" placeholder="Enter your search terms" />
+            </div>
+            <ul class="data-ctrl">
+                <input type="text" ng-repeat="i in items | searchFor:searchString" />
+                    <p>{{i.title}}</p>
+               
+            </ul>
+        </div>
+    </body>
+    <script src="js/site.js"></script>
+</html>
