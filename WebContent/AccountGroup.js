@@ -2,7 +2,7 @@ var app = angular.module('app', ['ngTouch', 'ui.grid', 'ui.grid.selection']);
 
 app.controller('MainCtrl', ['$scope', '$http', '$log', '$timeout', 'uiGridConstants', function ($scope, $http, $log, $timeout, uiGridConstants) {
   $scope.gridOptions = {
-    enableRowSelection: true,
+    enableRowSelection: false,
     enableSelectAll: true,
     selectionRowHeaderWidth: 35,
     rowHeight: 35,

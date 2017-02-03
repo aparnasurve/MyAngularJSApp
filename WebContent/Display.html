@@ -4,9 +4,11 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
- <body ng-controller="CountryController">
     <ul>
-      <li ng-repeat="country in countries">{{country.name}}</li>
+      <input type="date" name="bday" id="start_date"/>
     <ul>
   </body>
+  <script type="text/javascript">
+document.getElementById("date").value = new Date();
+</script>
 </html>
